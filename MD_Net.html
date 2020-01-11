@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MD-Net</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free singlepage web template created by GraphBerry">
+    <meta name="keywords" content="HTML5, Bootstrap 3, CSS3, javascript, PHP, Responsive, Mobile">
+    <meta name="author" content="GraphBerry.com"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/zcdl.css">
+	<script language="JavaScript" type="text/javascript" src="js/checkreg.js"></script>
+</head>
+<body>
+    <header>
+		
+	<div id="imgs">
+		<div id="bg1" class="xwbg"></div>
+		<div id="bg2" class="xwbg fadein"></div>
+	</div>
+	<script src="js/xwbg.js"></script>
+	<script>
+	function GetUrlPara() {　
+		var url = document.location.toString();
+		if (url.indexOf('?') == -1) {　
+			var para = 0;　　
+			return para;
+		} 
+		else {　
+			var arrUrl = url.split("?");　
+			var para = arrUrl[1] +"?"+arrUrl[2];　　
+			return para;
+		}
+	}
+	document.getElementById("inbackurl").value=GetUrlPara();
+	</script>
+		
+    <nav class="navbar navbar-fixed-top" id="header-nav">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+        		<a class="navbar-brand" href="#">
+            	<img src="img/logo/logo.png" alt="Wooster logo" />
+        		</a>
+    		</div>
+			<div class="primary-menu">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div id="navbar" class="navbar-collapse collapse">
+					 <ul class="nav navbar-nav">
+						<li><a data-scroll href="#">Home</a></li>
+						<li><a data-scroll href="#about">Abstract</a></li>
+						<li><a data-scroll href="#paper">Paper & code</a></li>
+						<li><a data-scroll href="#data">Dataset & Examples</a></li>
+					</ul>
+				</div>
+			</div>
+  		</div>
+	</nav>
+      
+    <div class="main-head">
+		 <div class="container">
+			 <div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<h1>Multi-task Driven Network</h1>
+					<h2> for Indoor Layering Prediction with Human-in-loop</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+	
+
+<section id="about" class="no-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 section-text">
+                <div class="title title-left">
+                    <h2>Abstract</h2>
+                    <div class="divider divider-sm"></div>
+                </div>
+                <p>Scene understanding has always been a topic for researches. Some models on scene understanding have been made to extract information from images such as semantic parsing and spatial position. However, few models can present a general but intuitive impression on the input image. To improve this situation, we propose our architecture: human-in-loop Multi-task Driven Network(MD-Net), aiming to give the layering of images' spatial structure. MD-Net consists of an encoder for the input and two decoders for two auxiliary tasks, and finally a convolution layer to generate the output prediction. Our model can run with humans selecting good results from new unseen datasets in each loop to enrich the training dataset and improve performance. Our network is proved to be effective and can generate new datasets effciently. The code, model, and dataset are publicly available.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="author" class="no-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 section-text">
+                <div class="title title-left">
+                    <h2>Author</h2>
+                    <div class="divider divider-sm"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row team">
+			<table width="1120" border="0">
+				<tr>
+					<td height="280" align="center" valign="bottom"><img src="img/author/yyh.jpg" class="img-circle"></td>
+					<td height="280" align="center" valign="bottom"><img src="img/author/xqy.jpg" class="img-circle"></td>
+					<td height="280" align="center" valign="bottom"><img src="img/author/lh.jpg" class="img-circle"></td>
+				</tr>
+				<tr>
+					<td height="60" align="center"> <font size="4" color="#8a8587">Yangyu Huan</font></td>
+					<td height="60" align="center"> <font size="4" color="#8a8587">Qingyao Xu</font></td>
+					<td height="60" align="center"> <font size="4" color="#8a8587">Han Lu</font></td>
+				</tr>
+				</table>
+        </div>
+    </div>
+</section>
+
+
+<section id="paper" class="no-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 section-text">
+                <div class="title title-left">
+                    <h2>Paper</h2>
+                    <div class="divider divider-sm"></div>
+                </div>
+                <p>Our paper is available <a href="">here</a>.</p>
+			</div>
+        </div>
+    </div>
+</section>
+
+<section id="code" class="no-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 section-text">
+                <div class="title title-left">
+                    <h2>Code</h2>
+                    <div class="divider divider-sm"></div>
+                </div>
+                <p>Our source code is available on <a href="https://github.com/yyh-rain-song/mt-cnn.git">Github</a>.</p>
+			</div>
+        </div>
+    </div>
+</section>
+
+<section id="video" class="no-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 section-text">
+                <div class="title title-left">
+                    <h2>Video</h2>
+                    <div class="divider divider-sm"></div>
+                </div>
+				<center>
+					<iframe class="video_iframe" style="z-index:1;" frameborder="0" src="" allowFullScreen="true"frameborder="0" height="600" width="900"></iframe>
+				</center>
+				<p></p>
+			</div>
+        </div>
+    </div>
+</section>
+
+
+<section id="data" class="no-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 section-text">
+                <div class="title title-left">
+                    <h2>Data</h2>
+                    <div class="divider divider-sm"></div>
+                </div>
+                <p>We construct our dataset from Sun-dataset. Our task is generating indoor layering prediction. Since there's no dataset about this task, the ground truth for our task is generated by ourselves using a specific rule with the help of depth and segmentation information.</p>
+				<div class="row team">
+				<table width="1120" border="0">
+					<tr>
+						<td height="280" align="center" valign="bottom"><img src="img/fig/Image.png" height="280" class="img-responsive img-thumbnail"></td>
+						<td height="280" align="center" valign="bottom"><img src="img/fig/seg.png" height="280" class="img-responsive img-thumbnail"></td>
+						<td height="280" align="center" valign="bottom"><img src="img/fig/depth.png" height="280" class="img-responsive img-thumbnail"></td>
+						<td height="280" align="center" valign="bottom"><img src="img/fig/GT.png" height="280" class="img-responsive img-thumbnail"></td>
+					</tr>
+					<tr>
+						<td height="40" align="center"> <font size="4" color="#8a8587">input image</font></td>
+						<td height="40" align="center"> <font size="4" color="#8a8587">segmentation</font></td>
+						<td height="40" align="center"> <font size="4" color="#8a8587">depth</font></td>
+						<td height="40" align="center"> <font size="4" color="#8a8587">Groung Truth</font></td>
+					</tr>
+				</table>
+				</div>
+			</div>
+        </div>
+    </div>
+</section>
+
+<section id="example" class="no-padding">
+    <div class="container">
+		<div class="row">
+            <div class="col-md-6 section-text">
+                <div class="title title-left">
+                    <h2>Examples</h2>
+                    <div class="divider divider-sm"></div>
+                </div>
+                <table width="1120" border="0">
+					<tr>
+						<td height="280" align="center" valign="bottom"><img src="img/result/1.png"></td>
+						<td height="280" align="center" valign="bottom"><img src="img/result/2.png"></td>
+						<td height="280" align="center" valign="bottom"><img src="img/result/3.png"></td>
+						<td height="280" align="center" valign="bottom"><img src="img/result/4.png"></td>
+					</tr>
+					<tr>
+						<td colspan="4" height="60" align="center"> <font size="4" color="#8a8587">input image</font></td>
+					</tr>
+					<tr>
+						<td height="280" align="center" valign="bottom"><img src="img/result/MD_1.png"></td>
+						<td height="280" align="center" valign="bottom"><img src="img/result/MD_2.png"></td>
+						<td height="280" align="center" valign="bottom"><img src="img/result/MD_3.png"></td>
+						<td height="280" align="center" valign="bottom"><img src="img/result/MD_4.png"></td>
+					</tr>
+					<tr>
+						<td colspan="4" height="60" align="center"> <font size="4" color="#8a8587">output image</font></td>
+					</tr>
+				</table>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+            <img src="img/logo/logo-white.png" class="logo-footer" />
+			<p>The End</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
